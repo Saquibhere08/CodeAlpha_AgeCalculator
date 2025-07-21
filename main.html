@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Age Calculator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📅 Age Calculator</h1>
+    <form id="ageForm">
+      <div class="input-group">
+        <input type="number" id="day" placeholder="Day" min="1" max="31" required />
+        <input type="number" id="month" placeholder="Month" min="1" max="12" required />
+        <input type="number" id="year" placeholder="Year" min="1900" max="2100" required />
+      </div>
+      <div class="btn-group">
+        <button type="submit">Calculate Age</button>
+        <button type="button" id="resetBtn">Reset</button>
+      </div>
+    </form>
+    <div id="message"></div>
+    <div id="result"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
